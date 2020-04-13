@@ -33,8 +33,9 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
 	}
+	
 	@RequestMapping(value = "/test", method =RequestMethod.GET )//어떤 주소가 들어왔을 때 요청을 매핑 할것인가
 	// value("URL 주소")== command.equals
 	public String test() {
