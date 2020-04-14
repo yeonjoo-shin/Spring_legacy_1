@@ -3,9 +3,10 @@ package com.naver.spring_1.member;
 public class MemberService {
 	private MemberDAO memberDAO;
 	
-	public MemberService() {
-		this.memberDAO = new MemberDAO();
+	public MemberService(MemberDAO memberDAO) { //매개변수가 있는 생성자
+		this.memberDAO = memberDAO;
 	}
+	
 	//join
 	public int memberAdd(MemberVO memberDTO) throws Exception{
 		int result = memberDAO.memberAdd(memberDTO);
