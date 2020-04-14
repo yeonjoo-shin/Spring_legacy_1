@@ -22,6 +22,7 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.naver.spring_1" />
+	<context:component-scan base-package="com.naver.member" />
 	
 	
 	
